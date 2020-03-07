@@ -47,7 +47,7 @@ function init() {
     const queryUrl = `https://api.github.com/users/${response.Username}`;
      axios.get(queryUrl).then(function(res) {
          const data = 
-         `# ${response.Title} \n## Description \n${response.Description} \n## Table of Contents \n* [Installation](#installation) \n* [Usage](#usage) \n* [License](#license) \n* [Contribution](#contribution) \n* [Test](#test) \n* [Questions](#questions) \n## Installation \n${response.Installation} \n## Usage \n${response.Usage} \n## License \n${response.License} \n## Contribution \n${response.Credits} \n## Tests \n## Questions \n ${res.data.avatar_url} \n${res.data.email} \n`;
+         `# ${response.Title} \n## Description \n${response.Description} \n## Table of Contents \n* [Installation](#installation) \n* [Usage](#usage) \n* [License](#license) \n* [Contribution](#contribution) \n* [Test](#test) \n* [Questions](#questions) \n## Installation \n${response.Installation} \n## Usage \n${response.Usage} \n## License \n${response.License} \n## Contribution \n${response.Credits} \n## Tests \n## Questions \n ![profile image](${res.data.avatar_url}) \n${res.data.email} \n`;
 
          fs.writeFile("README.md", data, function(err) {
 
