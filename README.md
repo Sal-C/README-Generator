@@ -18,13 +18,14 @@ This application requires the installation of the following:
 [Axios](https://www.npmjs.com/package/axios)
 
 ## Usage 
-```1. git clone https://github.com/Sal-C/README-Generator.git```
-```2. cd README-Generator```
-```3. npm i```
-```4. node index.js```
+```1. git clone https://github.com/Sal-C/README-Generator.git
+2. cd README-Generator
+3. npm i
+4. node index.js
+```
 
 ## License 
-This project is licensed under the MIT License. ```Read https://opensource.org/licenses/MIT```
+This project is licensed under the MIT License.
 
 ## Contribution 
 
